@@ -1,12 +1,15 @@
 package tree
 
 import (
+	"fmt"
+
 	"github.com/therecipe/qt/core"
 	"github.com/therecipe/qt/gui"
 	"github.com/therecipe/qt/quick"
 )
 
 func init() {
+	fmt.Println("init TreeController")
 	treeController_QmlRegisterType2("Tree", 1, 0, "TreeController")
 }
 
@@ -38,6 +41,6 @@ func (f *treeController) init() {
 	europeItem.AppendRow2(italyItem)
 	italyItem.AppendRow2(romeItem)
 	italyItem.AppendRow2(veronaItem)
-
+	fmt.Println("setting model")
 	f.SetTreeModel(treeModel)
 }

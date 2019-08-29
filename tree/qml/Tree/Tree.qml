@@ -6,8 +6,8 @@ import Tree 1.0
 
 TreeController {
   ListView {
-    // Layout.fillHeight: true
-    // Layout.fillWidth: true
+    Layout.fillHeight: true
+    Layout.fillWidth: true
     model: treeModel
     clip: true
     snapMode: ListView.SnapToItem
@@ -15,16 +15,16 @@ TreeController {
     property var rootIndex
 
     delegate: ItemDelegate {
-        property var modelIndex: treeModel.index(index,0, rootIndex)
-        property bool hasChildren: treeModel.hasChildren(modelIndex)
+        // property var modelIndex: treeModel.index(index,0, rootIndex)
+        // property bool hasChildren: treeModel.hasChildren(modelIndex)
         width: parent.width
-        text: treeModel.data(modelIndex)
+        text: "hello" //treeModel.data(modelIndex)
         onClicked: {
-            if(hasChildren)
-            {
-                // Recursively add another TreeSlide, with a new rootIndex
-                stackView.push("TreeSlide.qml", {rootIndex: modelIndex})
-            }
+            // if(hasChildren)
+            // {
+            //     // Recursively add another TreeSlide, with a new rootIndex
+            //     // stackView.push("TreeSlide.qml", {rootIndex: modelIndex})
+            // }
         }
     }
   }

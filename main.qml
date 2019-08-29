@@ -10,8 +10,7 @@ ApplicationWindow {
   visible: true
   title: "Tree View"
   minimumWidth: 1500; minimumHeight: 800
-    StackView
-  {
+    StackView {
       id: stackView
       Layout.fillHeight: true
       Layout.fillWidth: true

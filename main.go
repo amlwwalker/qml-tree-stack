@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	_ "github.com/amlwwalker/example-qml/NewTreeView/tree"
@@ -17,6 +18,7 @@ func main() {
 
 	app := qml.NewQQmlApplicationEngine(nil)
 	app.AddImportPath("./tree/qml")
+	fmt.Println("loading main.qml")
 	app.Load(core.NewQUrl3("./main.qml", 0))
 	widgets.QApplication_Exec()
 }
