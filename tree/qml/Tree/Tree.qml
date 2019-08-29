@@ -23,7 +23,7 @@ TreeController {
             if(hasChildren)
             {
                 // Recursively add another TreeSlide, with a new rootIndex
-                // stackView.push("TreeSlide.qml", {rootIndex: modelIndex})
+                stackView.push("TreeSlide.qml", {rootIndex: modelIndex})
             }
         }
     }
