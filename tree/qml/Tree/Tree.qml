@@ -6,8 +6,8 @@ import Tree 1.0
 
 TreeController {
   ListView {
-    Layout.fillHeight: true
-    Layout.fillWidth: true
+    // Layout.fillHeight: true
+    // Layout.fillWidth: true
     model: treeModel
     clip: true
     snapMode: ListView.SnapToItem
