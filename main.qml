@@ -12,8 +12,9 @@ ApplicationWindow {
   minimumWidth: 1500; minimumHeight: 800
     StackView {
       id: stackView
-      Layout.fillHeight: true
-      Layout.fillWidth: true
+      // Layout.fillHeight: true
+      // Layout.fillWidth: true
+      anchors.fill: parent
       initialItem: Tree {}
   }
 }

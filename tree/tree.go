@@ -41,6 +41,6 @@ func (f *treeController) init() {
 	europeItem.AppendRow2(italyItem)
 	italyItem.AppendRow2(romeItem)
 	italyItem.AppendRow2(veronaItem)
-	fmt.Println("setting model")
+
 	f.SetTreeModel(treeModel)
 }
